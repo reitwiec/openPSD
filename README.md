@@ -11,6 +11,7 @@
   <a href=""><img src="https://img.shields.io/badge/Documentation-000?logo=googledocs&logoColor=FFE165&style=for-the-badge" alt="Check out the documentation"></a>
 </div>
 
+<hr>
 
 Welcome to OpenPSD, a handheld, open-source instrument designed to measure tactile pressure thresholds digitally. Adapted from clinical tools like the AcroVal™ system, it applies calibrated pressure to the skin and records sensory responses for studies of nerve regeneration following reconstructive surgery.
 
