@@ -1,3 +1,11 @@
+<a name="readme-top"></a>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/reitwiec/docs/main/openPSD/static/img/logo.png" alt="Logo" width="200">
+  <h1 align="center" style="border-bottom: none">Open Pressure Sensing Device: Measure tactile pressure thresholds digitally</h1>
+</div>
+<hr>
+
 # Open Pressure Sensing Device
 
 Reitwiec Shandilya, Michelle Hui, Sebastian Bidegain, Joey Castillo (Cornell Tech). Carson Gundlach and Dr. David Otterburn (Weill Cornell Medicine)
