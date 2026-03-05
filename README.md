@@ -4,7 +4,13 @@
   <img src="https://raw.githubusercontent.com/reitwiec/openPSD/refs/heads/master/static/img/logo.png" alt="Logo" width="200">
   <h1 align="center" style="border-bottom: none">Open Pressure Sensing Device: Measure tactile pressure thresholds digitally</h1>
 </div>
-<hr>
+
+<div align="center">
+  <a href=""><img src="https://img.shields.io/badge/LICENSE-MIT-20B2AA?style=for-the-badge" alt="MIT License"></a>
+  <br/>
+  <a href=""><img src="https://img.shields.io/badge/Documentation-000?logo=googledocs&logoColor=FFE165&style=for-the-badge" alt="Check out the documentation"></a>
+</div>
+
 
 Welcome to OpenPSD, a handheld, open-source instrument designed to measure tactile pressure thresholds digitally. Adapted from clinical tools like the AcroVal™ system, it applies calibrated pressure to the skin and records sensory responses for studies of nerve regeneration following reconstructive surgery.
 
