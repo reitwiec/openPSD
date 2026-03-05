@@ -22,7 +22,7 @@ This project supports the ongoing research of [Dr. David Otterburn](https://www.
 
 After mastectomy, patients often experience a loss of sensation that affects comfort, safety, and quality of life. Through surgical co-aptation of donor and recipient nerves, Dr. Otterburn’s team aims to re-establish sensory pathways; however, evaluating the success of that process has long relied on subjective or coarse analog tools.
 
-Developed by Cornell Tech Master’s students [Michelle Hui](https://michelle-hui.com/) and [Reitwiec Shandilya](https://www.linkedin.com/in/reitwiec/, this open-source device captures quantitative measurements of tactile pressure. By precisely logging patient response data, it allows clinicians to objectively track sensory recovery over time, providing richer, reproducible data than traditional Semmes-Weinstein monofilaments, which only measure at discrete force intervals. Beyond reconstructive surgery, the same sensing tool could inform other clinical neurological testing and research functions, expanding open-source tools for quantifying sensation and nerve function.
+Developed by Cornell Tech Master’s students [Michelle Hui](https://michelle-hui.com/) and [Reitwiec Shandilya](https://www.linkedin.com/in/reitwiec/), this open-source device captures quantitative measurements of tactile pressure. By precisely logging patient response data, it allows clinicians to objectively track sensory recovery over time, providing richer, reproducible data than traditional Semmes-Weinstein monofilaments, which only measure at discrete force intervals. Beyond reconstructive surgery, the same sensing tool could inform other clinical neurological testing and research functions, expanding open-source tools for quantifying sensation and nerve function.
 
 The project is supported by the Cornell Tech [MakerLab](https://tech.cornell.edu/research/makerlab/) and is undertaken in partnership with the [Open Source Hardware Association’s](https://oshwa.org/) [Open Healthware Initiative](https://oshwa.org/announcements/oshwas-new-open-healthware-certification-how-we-got-here-and-where-were/), with the support of the National Science Foundation. The goal is to create a validated, open-source alternative to proprietary devices such as the AcroVal™ Neurosensory & Motor Testing System, enabling wider adoption of transparent, reproducible clinical instrumentation across research and education.
 
@@ -36,7 +36,7 @@ The project is supported by the Cornell Tech [MakerLab](https://tech.cornell.edu
 - **CSV export** - Export sessions for external analysis
 - **Offline operation** - All data is stored locally
 
-## OpenPSD Build
+### OpenPSD Build
 We designed openPSD with the intention that anyone should be able to build it using commonly accessible parts. This principle guided our design decisions and ultimately influenced the form and shape of the device.
 
 [Check out on Instructables]()
