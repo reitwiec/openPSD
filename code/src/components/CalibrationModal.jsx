@@ -4,21 +4,25 @@ function CalibrationModal({ onClose, calibrationStatus, calibrationMass }) {
   const getStepStatus = (step) => {
     if (!calibrationStatus) return 'pending';
     
+    const status = calibrationStatus.status;
+    
     switch (step) {
       case 1:
-        return calibrationStatus.status === 'started' || calibrationStatus.status === 'tared' 
-          || calibrationStatus.status === 'complete' || calibrationStatus.status === 'verified'
+        // Step 1: Initialize & Tare - complete after starting or taring
+        return status === 'started' || status === 'tared' || status === 'zero_captured'
           ? 'complete' : 'pending';
       case 2:
-        return calibrationStatus.status === 'tared' || calibrationStatus.status === 'complete' 
-          || calibrationStatus.status === 'verified'
-          ? 'complete' : (calibrationStatus.status === 'started' ? 'active' : 'pending');
+        // Step 2: Capture Zero - complete after capturing zero-load (first button press)
+        return status === 'zero_captured' || status === 'complete' || status === 'verified'
+          ? 'complete' : (status === 'tared' ? 'active' : 'pending');
       case 3:
-        return calibrationStatus.status === 'complete' || calibrationStatus.status === 'verified'
-          ? 'complete' : (calibrationStatus.status === 'tared' ? 'active' : 'pending');
+        // Step 3: Capture Known Mass - complete after calibration calculation (second button press)
+        return status === 'complete' || status === 'verified'
+          ? 'complete' : (status === 'zero_captured' ? 'active' : 'pending');
       case 4:
-        return calibrationStatus.status === 'verified' 
-          ? 'complete' : (calibrationStatus.status === 'complete' ? 'active' : 'pending');
+        // Step 4: Verification - complete after verification reading
+        return status === 'verified' 
+          ? 'complete' : (status === 'complete' ? 'active' : 'pending');
       default:
         return 'pending';
     }
