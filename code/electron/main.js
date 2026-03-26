@@ -172,6 +172,9 @@ ipcMain.handle('serial:connect', async (event, portPath) => {
       if (trimmed.includes('Tare done')) {
         mainWindow?.webContents.send('serial:calibration', { status: 'tared' });
       }
+      if (trimmed.includes('Captured zero-load counts')) {
+        mainWindow?.webContents.send('serial:calibration', { status: 'zero_captured' });
+      }
       if (trimmed.includes('NEW REFERENCE_UNIT')) {
         const match = trimmed.match(/NEW REFERENCE_UNIT:\s*([\d.]+)/);
         mainWindow?.webContents.send('serial:calibration', { 
