@@ -9,7 +9,11 @@ function CalibrationModal({ onClose, calibrationStatus, calibrationMass }) {
     switch (step) {
       case 1:
         // Step 1: Initialize & Tare - complete after starting or taring
-        return status === 'started' || status === 'tared' || status === 'zero_captured'
+        if (!status) {
+          // If calibrationStatus exists but status is not set, step 1 is complete
+          return calibrationStatus ? 'complete' : 'pending';
+        }
+        return status === 'started' || status === 'tared' || status === 'zero_captured' || status === 'complete' || status === 'verified'
           ? 'complete' : 'pending';
       case 2:
         // Step 2: Capture Zero - complete after capturing zero-load (first button press)
